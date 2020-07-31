@@ -1,0 +1,86 @@
+.meditation-component {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 25% 40%;
+  background: linear-gradient(
+    180deg,
+    #bcdbdf 40.42% 60%,
+    rgba(212, 227, 228, 0) 110%
+  );
+
+  color: white;
+  font-family: "Saira", sans-serif;
+  letter-spacing: 0.06em;
+  line-height: 155.2%;
+  width: 100vw;
+  height: 650px;
+  position: fixed;
+  left: 0;
+  top: 75vh;
+  border-top-left-radius: 115px;
+}
+
+.is-animated {
+  animation-name: animationStart;
+  animation-fill-mode: forwards;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  transition: ease;
+}
+
+.reverse-animation {
+  animation-name: animationReverse;
+  animation-fill-mode: forwards;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  transition: ease;
+}
+
+#mandala {
+  width: 80px;
+  height: 56px;
+  padding: 0;
+}
+
+.meditation-item1 {
+  justify-self: center;
+  align-self: center;
+}
+
+.meditation-item2 {
+  justify-self: left;
+  align-self: center;
+  font-size: 24px;
+}
+
+#breath {
+  border-radius: 100%;
+  grid-column: span 2;
+  text-align: center;
+}
+
+.meditation-animation {
+  margin-top: 39px;
+  grid-column: span 2;
+}
+
+@keyframes animationStart {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-67%);
+  }
+}
+
+@keyframes animationReverse {
+  0% {
+    transform: translateY(-67%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
