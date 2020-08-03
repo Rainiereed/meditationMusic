@@ -1,3 +1,5 @@
+A group project for TrainBrain, with meditation music and butterfly breathing exercises animation.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
